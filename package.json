@@ -1,0 +1,20 @@
+{
+  "name": "minimal-starter",
+  "version": "1.0.0",
+  "description": "a start project for material-ui react applications",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "client": "npm start --prefix client",
+    "client-install": "npm install --prefix client",
+    "server": "nodemon server/server.js",
+    "start": "node server.js"
+  },
+  "author": "aimachieve",
+  "license": "MIT",
+  "dependencies": {
+    "concurrently": "^6.2.1",
+    "cors": "^2.8.5",
+    "nodemon": "^2.0.13",
+    "styled-components": "^5.3.3"
+  }
+}
