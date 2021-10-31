@@ -109,7 +109,7 @@ export default function HowItWorks() {
               </MotionInView>
             </Grid>
             <Grid item xs={12} md={4}>
-              <MotionInView variants={varFadeInLeft}>
+              <MotionInView variants={varFadeInUp}>
                 <Card
                   sx={{
                     padding: 2,
@@ -126,6 +126,37 @@ export default function HowItWorks() {
                     <Typography
                       variant="h4"
                       color="common.white"
+                      sx={{ textTransform: 'capitalize' }}
+                    >
+                      section title
+                    </Typography>
+                    <Typography variant="body2" color="common.white">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Aliquam eros arcu, malesuada auctor velit feugiat, dapibus
+                      congue ligula. Etiam ipsum nisl, scelerisque
+                    </Typography>
+                  </Stack>
+                </Card>
+              </MotionInView>
+            </Grid>
+            <Grid item xs={12} md={4}>
+              <MotionInView variants={varFadeInRight}>
+                <Card
+                  sx={{
+                    padding: 2,
+                    backgroundColor: 'common.white',
+                    borderRadius: 0,
+                  }}
+                >
+                  <Stack spacing={2}>
+                    <img
+                      src="/images/generic-placeholder.jpg"
+                      alt="placeholder"
+                      width="100%"
+                    />
+                    <Typography
+                      variant="h4"
+                      color="primary"
                       sx={{ textTransform: 'capitalize' }}
                     >
                       section title

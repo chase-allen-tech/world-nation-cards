@@ -18,12 +18,14 @@ import WhoWeAre from './WhoWeAre'
 import MainHero from './MainHero'
 import { CarouselBasic3 } from 'components/carousel'
 import HowItWorks from './HowItWorks'
+import LiveEvents from './LiveEvents'
+import SignUpCTA from 'customComponents/SignUpCTA'
 
 // ----------------------------------------------------------------------
 
 const RootStyle = styled(Page)({
   paddingTop: 176,
-  paddingBottom: 88,
+  // paddingBottom: 88,
   height: '100%',
 })
 
@@ -43,10 +45,8 @@ export default function HomePage() {
         <Box sx={{ backgroundImage: 'url("/images/site-background.jpg")' }}>
           <WhoWeAre />
           <HowItWorks />
-          <LandingHowWork />
-          <LandingEquipment />
-          <LandingDamage />
-          <LandingConnect />
+          <LiveEvents />
+          <SignUpCTA />
         </Box>
       </ContentStyle>
     </RootStyle>
